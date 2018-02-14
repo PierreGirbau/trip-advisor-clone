@@ -15,13 +15,15 @@ restaurants_attributes = [
     name:         'Dishoom',
     address:      '7 Boundary St, London E2 7JE',
     description:  'Buzzy destination for Indian street food in Bombay-style vintage decor.',
-    stars:        5
+    stars:        5,
+    chef:         'John Doe'
   },
   {
     name:         'Pizza East',
     address:      '56A Shoreditch High St, London E1 6PQ',
     description:  'Pizzeria with industrial looks, serving rustic pizza and antipasti.',
-    stars:        4
+    stars:        4,
+    chef:         'Giovanni'
   }
 ]
 Restaurant.create!(restaurants_attributes)

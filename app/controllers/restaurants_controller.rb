@@ -3,6 +3,14 @@ class RestaurantsController < ApplicationController
 
   # GET /restaurants
   # GET /restaurants.json
+  def top
+    @restaurants = Restaurant.where(stars: 5)
+  end
+
+  def chef
+    @restaurant = Restaurant.find(params[:id])
+  end
+
   def index
     @restaurants = Restaurant.all
   end
